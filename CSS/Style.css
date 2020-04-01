@@ -1,0 +1,1521 @@
+body {
+  margin: 0;
+  font: normal 100% BebasNeue, Helvetica, "Lucida Grande", Arial, sans-serif;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+a {
+  text-decoration: none;
+}
+/* フォント：Acumin Pro */
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro'), url('Acumin-RPro.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acumin Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Italic'), url('Acumin-ItPro.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acumin Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold'), url('Acumin-BdPro.woff') format('woff');
+}
+@font-face {
+  font-family: 'Acumin Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold Italic'), url('Acumin-BdItPro.woff') format('woff');
+}
+/* フォント：Acumin Pro */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.eot");
+  src: url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.svg#Gotham Pro")
+      format("svg");
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2) format('woff2');
+  unicode-range: U+25e56, U+25e62, U+25e65, U+25ec2, U+25ed8, U+25ee8, U+25f23, U+25f5c, U+25fd4, U+25fe0, U+25ffb, U+2600c, U+26017, U+26060, U+260ed, U+26222, U+2626a, U+26270, U+26286, U+2634c, U+26402, U+2667e, U+266b0, U+2671d, U+268dd, U+268ea, U+26951, U+2696f, U+26999, U+269dd, U+26a1e, U+26a58, U+26a8c, U+26ab7, U+26aff, U+26c29, U+26c73, U+26c9e, U+26cdd, U+26e40, U+26e65, U+26f94, U+26ff6-26ff8, U+270f4, U+2710d, U+27139, U+273da-273db, U+273fe, U+27410, U+27449, U+27614-27615, U+27631, U+27684, U+27693, U+2770e, U+27723, U+27752, U+278b2, U+27985, U+279b4, U+27a84, U+27bb3, U+27bbe, U+27bc7, U+27c3c, U+27cb8, U+27d73, U+27da0, U+27e10, U+27fb7, U+2808a, U+280bb, U+28277, U+28282, U+282f3, U+283cd, U+2840c, U+28455, U+2856b, U+285c8-285c9, U+286d7, U+286fa, U+28946, U+28949, U+2896b, U+28987-28988, U+289ba-289bb, U+28a1e, U+28a29, U+28a43, U+28a71, U+28a99, U+28acd, U+28add, U+28ae4, U+28bc1, U+28bef, U+28cdd, U+28d10, U+28d71, U+28dfb, U+28e0f, U+28e17, U+28e1f, U+28e36, U+28e89, U+28eeb, U+28ef6, U+28f32, U+28ff8, U+292a0, U+292b1, U+29490, U+295cf, U+2967f, U+296f0, U+29719, U+29750, U+29810, U+298c6, U+29a72, U+29d4b, U+29ddb, U+29e15, U+29e3d, U+29e49, U+29e8a, U+29ec4, U+29edb, U+29ee9, U+29fce, U+29fd7, U+2a01a, U+2a02f, U+2a082, U+2a0f9, U+2a190, U+2a2b2, U+2a38c, U+2a437, U+2a5f1, U+2a602, U+2a61a, U+2a6b2, U+2a9e6, U+2b746, U+2b751, U+2b753, U+2b75a, U+2b75c, U+2b765, U+2b776-2b777, U+2b77c, U+2b782, U+2b789, U+2b78b, U+2b78e, U+2b794, U+2b7ac, U+2b7af, U+2b7bd, U+2b7c9, U+2b7cf, U+2b7d2, U+2b7d8, U+2b7f0, U+2b80d, U+2b817, U+2b81a, U+2f804, U+2f80f, U+2f815, U+2f818, U+2f81a, U+2f822, U+2f828, U+2f82c, U+2f833, U+2f83f, U+2f846, U+2f852, U+2f862, U+2f86d, U+2f873, U+2f877, U+2f884, U+2f899-2f89a, U+2f8a6, U+2f8ac, U+2f8b2, U+2f8b6, U+2f8d3, U+2f8db-2f8dc, U+2f8e1, U+2f8e5, U+2f8ea, U+2f8ed, U+2f8fc, U+2f903, U+2f90b, U+2f90f, U+2f91a, U+2f920-2f921, U+2f945, U+2f947, U+2f96c, U+2f995, U+2f9d0, U+2f9de-2f9df, U+2f9f4;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Sans Japanese Bold'), local('NotoSansJapanese-Bold'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQei0q131nj-pXANNwpfqCt9pay6XIBdsAJNIhVEwQ.119.woff2) format('woff2');
+  unicode-range: U+20, U+3001-3002, U+3041-307f, U+3081-308f, U+3091-3093, U+3099-309a, U+309d-309e, U+30a1-30e1, U+30e3-30ed, U+30ef-30f0, U+30f2-30f4, U+30fb-30fe, U+ff0c, U+ff0e;
+}
+.Top_Section{
+  width: 100%;
+  height:auto;
+}
+
+
+#Top_Background {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Run,
+.Away {
+  font-family: "Gotham Pro";
+  font-size: 14em;
+  position: relative;
+  color: #c22f30;
+  display: inline-block;
+}
+
+.Run {
+  left: -1000px;
+  float: left;
+  top: 50px;
+}
+
+.Away {
+  right: -1000px;
+  top: 50px;
+}
+
+#Runaway_Logo {
+  margin: 0;
+  padding: 0;
+  width: 38%;
+  float: left;
+  position: absolute;
+  top: 265px;
+  left: 15%;
+}
+
+.Catch_phrase {
+  font-family: BebasNeue, Helvetica, "Lucida Grande", Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.9em;
+  position: absolute;
+  top: 360px;
+  left: 19%;
+  color: gray;
+}
+
+/* .Award_phrase {
+  font-family: BebasNeue, Helvetica, "Lucida Grande", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 480px;
+  left: 31%;
+  color: gray;
+} */
+
+/* トップメニュー */
+.Top_banner {
+  margin: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.Top_banner:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+/* TOPナビゲーション */
+.globalNavi ul li :hover .Top_banner {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.globalNavi {
+  float: right;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  line-height: 10px;
+  width: 60%;
+}
+.globalNavi ul {
+  margin: 0;
+}
+
+/* .globalNavi ul li ,.globalNavi ul li a{
+  font-family: 'Noto Sans JP';
+  font-size: 0.9em;
+  list-style: none;
+  width: 180px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  float: left;
+  color: grey;
+  font-weight: 900;
+  text-decoration: none;
+} */
+
+
+.navi_WhatisThis ,.navi_WhatisThis a,.navi_HowtoUse ,.navi_HowtoUse a,
+.navi_Howaboutdetail ,.navi_Howaboutdetail a,.navi_Award ,.navi_Award a,
+.navi_Designer ,.navi_Designer a{
+  font-family: 'Noto Sans JP';
+  font-size: 0.9em;
+  list-style: none;
+  /* width: 180px; */
+  padding-left: 0px;
+  padding-top: 10px;
+  margin-right: 1%;
+  float: left;
+  color: grey;
+  font-weight: 900;
+  text-decoration: none;
+
+}
+
+.navi_WhatisThis {
+  width: 20%;
+}
+.navi_HowtoUse {
+  width: 20%;
+}
+
+.navi_Howaboutdetail {
+  width: 20%;
+  margin-right: 3%;
+}
+.navi_Award {
+  width: 20%;
+  margin-right: 3%;
+}
+
+.navi_Award {
+  width: 10%;
+  padding-right: 3%;
+}
+
+
+
+
+.globalNavi ul li a:hover {
+  color: #c22f30;
+  font-size: 1.3em;
+  transition: all 0.8s;
+}
+
+
+/* 移動ナビゲーション */
+
+.LocalNavi_Item{
+clear: both;
+
+}
+.LocalNavi_Radius{
+  padding: 0;
+  margin: 0;
+  margin-top:1px;
+  height: 0.9em;
+  width: 0.9em;
+  background: #c22f30;
+  border-radius: 50%;
+  z-index: 9999;
+  display: inline-block;
+  opacity: 0;
+}
+
+
+.LocalNavi {
+  
+  float: left;
+  /* left: 1%; */
+  top: 1000px;
+  position: fixed;
+  line-height: 20px;
+  z-index: 9999;
+  font-family: Noto Sans JP ;
+  font-weight: 900;
+
+}
+
+.LocalNavi ul li,.LocalNavi ul li a {
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.9em;
+  list-style: none;
+  width: 180px;
+  /* padding-left: 0px;
+  padding-top: 20px;
+  padding-right: 10px; */
+  /* float: left; */
+  color: grey;
+  font-weight: 900;
+  clear: both;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.LocalNavi ul li a:hover {
+  color: #c22f30;
+  font-size: 1.3em;
+  transition: all 0.8s;
+}
+.LocalNavi ul div:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+
+
+
+/* サブメニュー */
+.subMenu_Concept {
+  background-color: black;
+  width: 200px;
+  height: 40px;
+  float: right;
+  position: absolute;
+  top: 80px;
+  right: 1%;
+  line-height: 4px;
+}
+.subMenu_Concept a {
+  color: white;
+  font-family: "GothamProMedium";
+  font-size: 12px;
+  margin: 1px 10px 10px 10px;
+  padding: 0px;
+}
+
+.subMenu_Use {
+  background-color: black;
+  width: 200px;
+  height: 40px;
+  float: right;
+  position: absolute;
+  top: 122px;
+  right: 1%;
+  line-height: 4px;
+}
+.subMenu_Use a {
+  color: white;
+  font-family: "GothamProMedium";
+  font-size: 12px;
+  margin: 1px 10px 10px 10px;
+  padding: 0px;
+}
+.subMenu_mediumBar {
+  background-color: white;
+  width: 200px;
+  height: 2px;
+  float: right;
+  position: absolute;
+  top: 120px;
+  right: 1%;
+}
+
+.subMenu_Concept:hover {
+  float: left;
+  left: 84.5%;
+  width: 0px;
+  transition: width 0.5s;
+}
+
+.subMenu_Concept a :hover {
+  font-family: Gotham Pro;
+  color: black;
+  font-size: 30px;
+  transition: color 0.5s;
+  transition: font-size 1.5s;
+}
+
+.subMenu_Use:hover {
+  float: left;
+  left: 84.5%;
+  width: 0px;
+  transition: width 0.5s;
+}
+
+.subMenu_Use a :hover {
+  font-family: Gotham Pro;
+  color: black;
+  font-size: 30px;
+  transition: color 0.5s;
+  transition: font-size 1.5s;
+  margin-right: 0px;
+}
+
+/* ページダウン矢印 */
+.downArrow {
+  background-color: black;
+  width: 150px;
+  height: 25px;
+  left: 43%;
+  float: center;
+  position: absolute;
+  top: 730px;
+  line-height: 4px;
+}
+.downArrow p {
+  color: white;
+  font-family: "GothamProMedium";
+  font-size: 11px;
+  position: absolute;
+  page-break-after: auto;
+  padding-left: 27%;
+}
+
+.downArrow_triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 18.5px 0 18.5px;
+  border-color: #000000 transparent transparent transparent;
+  line-height: 0px;
+  _border-color: #000000 #ffffff #ffffff #ffffff;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#ffffff');
+  left: 47.1%;
+  float: center;
+  position: absolute;
+  top: 757px;
+  line-height: 7px;
+}
+
+
+
+/* Introductionの３画像 */
+#Introduction_section{
+  position: absolute;
+  top: 940px;
+}
+
+#Introduction_section h2 {
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 1.2em;
+  color: grey;
+  letter-spacing: 1em;
+  position: relative;
+  margin: 0 0 0 3%;
+  top: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Award_TOP {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+}
+
+.Award_phrase {
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.8em;
+  color: grey;
+  letter-spacing: 0.1em;
+  position: relative;
+  top: 0px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Award_content {
+  margin-left: 8%;
+  margin-top: 15px;
+}
+.Award_content div {
+  display: inline-block;
+  font-size: 0.3em;
+  margin-right: 6em;
+  text-align: left;
+  line-height: 1.4em;
+  color: grey;
+}
+.Award_content h5 {
+  font-size: 0.1em;
+  margin-left: 0px;
+}
+
+.Award_content h4 {
+  font-size: 0.1em;
+  margin-left: 0px;
+}
+
+.Introduction_1st {
+  padding-top: 100px;
+  width: 100%;
+  height: 401px;
+  margin: 0 auto;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Introduction_Image {
+  margin: 0 auto;
+  width: 30%;
+  min-width: 200px;
+  height: 300px;
+  min-height: 300px;
+  display: inline-block;
+}
+
+.Introduction_Image img {
+  margin: 0 auto;
+  min-width: 200px;
+  height: 300px;
+  min-height: 300px;
+}
+
+/* Introductionの説明文 */
+.Introduction_2nd {
+  top: 200px;
+  padding-top: 80px;
+  width: 100%;
+  margin: 10% auto;
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  /* text-align: center; */
+}
+
+/* Introductionのシミレーション写真 */
+.Introduction_simulation_left {
+  width: 38%;
+  /* min-width: 200px; */
+  /* min-height: 300px; */
+  /* float: left; */
+  margin-top: 80px;
+  margin-left: 12%;
+  display: inline-block;
+}
+.Introduction_simulation_left img {
+  margin: 0 auto;
+  width: 75%;
+  min-width: 200px;
+}
+
+.Introduction_simulation_right {
+  width: 38%;
+  /* min-width: 200px;
+  min-height: 300px; */
+  /* float: left; */
+  margin-top: 80px;
+  margin-right: 10%;
+  display: inline-block;
+}
+
+.YellowRadius1 {
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  width: 35px;
+  background: #ead558;
+  opacity: 0.5;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  z-index: 9999;
+  margin: 0 auto;
+  margin-top: 35%;
+  margin-left: 6%;
+  animation: scaleDrew 2.5s ease-in-out infinite;
+}
+
+.YellowRadius2 {
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  width: 35px;
+  background: #ead558;
+  opacity: 0.5;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  z-index: 9999;
+  margin-top: 29%;
+  margin-right: 8%;
+  animation: scaleDrew 2.5s ease-in-out infinite;
+}
+
+.YellowRadius3 {
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  width: 35px;
+  background: #ead558;
+  opacity: 0.5;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  z-index: 9999;
+  margin-top: 60%;
+  margin-right: -7%;
+  animation: scaleDrew 2.5s ease-in-out infinite;
+}
+
+@keyframes scaleDrew {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(2.5);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(2.5);
+    opacity: 0.2;
+  }
+}
+
+.Introduction_EvacuationPlan {
+  width: 100%;
+  min-width: 200px;
+  top: -20px;
+  /* float: right; */
+  display: inline-block;
+  text-align: center;
+}
+
+.Introduction_EvacuationPlan img {
+  margin: 0 auto;
+  width: 30%;
+  min-width: 200px;
+  text-align: center;
+  position: absolute;
+  float: center;
+  /* min-height: 300px; */
+  /* max-height: 580px; */
+  text-align: center;
+  z-index: 1;
+  top: 250px;
+  left: 54%;
+}
+
+#Introduction_title {
+  font-family: "osaka bold";
+  font-size: 3em;
+  -webkit-text-stroke: 0.01em black;
+  color: lightgrey;
+  letter-spacing: 0.1em;
+  position: relative;
+  margin: 10px 0px;
+  text-align: center;
+  top: 55px;
+}
+
+.Introduction_p {
+  text-align: center;
+}
+
+.Introduction_p p {
+  width: 75%;
+  color: grey;
+  font-family: "Osaka レギュラー";
+  font-size: 0.85em;
+  line-height: 1.3em;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
+  table-layout: fixed;
+  /* white-space: pre-wrap; */
+  white-space: normal;
+  text-align: left;
+  top: 50px;
+
+}
+
+/* ●《”安全の場所まで導く”説明セクション》● */
+.Introduction_3rd {
+  
+  top: 300px;
+  /* padding-top: 80px; */
+  width: 100%;
+  margin: 10% auto;
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  /* text-align: center; */
+}
+
+.Introduction_3rd_left {
+  width: 38%;
+  margin-top: 80px;
+  margin-left: 10%;
+  display: inline-block;
+  top: 100px;
+  margin-top: 280px;
+}
+.Introduction_3rd_left img {
+  margin: 0 auto;
+    width: 80%;
+    min-width: 200px;
+    text-align: left;
+}
+
+.Introduction_3rd_right {
+  width: 38%;
+  /* min-width: 200px;
+  min-height: 300px; */
+  /* float: left; */
+  margin-top: 80px;
+  margin-right: 10%;
+  display: inline-block;
+}
+
+.Introduction_3rd_img {
+  width: 100%;
+  min-width: 200px;
+  top: -20px;
+  /* float: right; */
+  display: inline-block;
+  text-align: center;
+}
+
+.Introduction_3rd_img > img {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 200px;
+  text-align: center;
+  position: relative;
+  /* min-height: 300px; */
+  /* max-height: 580px; */
+  text-align: center;
+}
+
+#Introduction_3rd_title{
+  font-family: "osaka bold";
+  font-size: 2.5em;
+  -webkit-text-stroke: 0.01em black;
+  color: lightgrey;
+  letter-spacing: 0.1em;
+  position: relative;
+  margin: 10px 0px;
+  text-align: center;
+  top: 55px;
+
+}
+
+.Introduction_3rd_p{
+margin: 0 auto;
+text-align: center;
+
+}
+
+.Introduction_3rd_p h5 {
+  width: 35%;
+  color: black;
+  font-family: "osaka bold";
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  position: relative;
+  bottom: -47px;
+  text-align: left;
+  left: 12.5%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.Introduction_3rd_p p{
+  width: 75%;
+  color: grey;
+  font-family: "Osaka レギュラー";
+  font-size: 0.85em;
+  line-height: 1.3em;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
+  table-layout: fixed;
+white-space: normal;
+  text-align: left;
+  top: 50px;
+  text-align: left;
+
+}
+
+
+/*  */
+
+
+/* ●《”暗闇の中光る”説明セクション》● */
+.Introduction_4th {
+  
+  top: 300px;
+  width: 100%;
+  margin: 10% auto;
+  clear: both;
+  margin: 250px auto;
+  position: relative;
+}
+
+.Introduction_4th_left {
+  width: 38%;
+  margin-left: 10%;
+  top: 100px;
+  float: left;
+}
+
+.Introduction_4th_left img {
+  margin: 0 auto;
+    width: 80%;
+    min-width: 200px;
+    text-align: left;
+}
+
+
+
+.Introduction_4th_right {
+  width: 38%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+
+
+#Introduction_4th_title{
+  font-family: "osaka bold";
+  font-size: 2.5em;
+  -webkit-text-stroke: 0.01em black;
+  color: lightgrey;
+  letter-spacing: 0.1em;
+  position: relative;
+  margin: 10px 0px;
+  text-align: center;
+  top: 55px;
+
+}
+
+.Introduction_4th_p{
+margin: 0 auto;
+text-align: center;
+
+}
+
+.Introduction_4th_p h5 {
+  width: 35%;
+  color: black;
+  font-family: "osaka bold";
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  position: relative;
+  bottom: -47px;
+  text-align: left;
+  left: 12.5%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.Introduction_4th_p p{
+  width: 75%;
+  color: grey;
+  font-family: "Osaka レギュラー";
+  font-size: 0.85em;
+  line-height: 1.3em;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
+  table-layout: fixed;
+  /* white-space: pre-wrap; */
+  white-space: normal;
+  text-align: left;
+  top: 50px;
+  text-align: left;
+
+}
+
+
+
+/* Introductionのシミレーションシリーズ
+
+.Introduction_3rd{
+  top:500px;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+
+.simulation_series{
+
+  margin: 0 auto;
+    margin-left: 3%;
+    width: 30%;
+    max-width: 450px;
+    min-height: 200px;
+    display: inline-block;
+}
+
+.simulation_series_img{
+  margin: 0 auto;
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    display: inline-block;
+} 
+
+
+.simulation_series_img img{
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+  max-height: 200px;
+
+}
+
+.simulation_series_article{
+  width: 35%;
+  color: grey;
+  font-family: "GothamProMedium";
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0 0 0 25%;
+  display: inline-block;
+  position: relative;
+WORD-WRAP:break-word;
+TABLE-LAYOUT:fixed;
+white-space:pre-wrap;
+}
+
+.simulation_series_article h4{
+  margin: 0;
+  padding: 0;
+}
+
+.simulation_series_article p{
+  margin: 0;
+}
+ */
+
+ #instructions_section h3{
+  font-size: 3.5em;
+    text-align: center;
+    color: #999999;
+    font-family: Noto Sans JP;
+    margin: 0;}
+
+.instructions_title {
+  font-family: "GothamProMedium";
+  font-size: 1.8em;
+  color: #000000;
+  letter-spacing: 0em;
+  position: relative;
+  margin: 0 0 0 3%;
+  top: 200px;
+  left: 1%;
+}
+
+/* instructionsセクション */
+
+#instructions_section {
+  position: absolute;
+  top: 4500px;
+}
+
+.instructions {
+  /* padding-top: 250px; */
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+.instructions_row {
+  padding-top: 130px;
+  width: 100%;
+  /* margin: 0 auto; */
+  margin: 0 10%;
+  clear: both;
+  position: relative;
+}
+
+.instructions_unit {
+  vertical-align: top;
+  width: 40%;
+  margin: 0 0 0 5%;
+  /* display: inline-block; */
+  display: inline-block;
+}
+.instructions_unit img {
+  width: 80%;
+  height: auto;
+}
+
+.instructions_unit h4{
+  width: 35%;
+  color: #c22f30;
+  font-family: "osaka bold";
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  position: relative;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+
+.instructions_unit p {
+  width: 80%;
+  color: grey;
+  font-family: "GothamProMedium";
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  line-height: 1.2em;
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
+  table-layout: fixed;
+  white-space: pre-wrap;
+}
+
+/* ●《”詳細”説明セクション》● */
+
+#Detail_section{
+  position: absolute;
+  top: 6600px;
+  margin: 200px 5%;
+}
+#Detail_section h3{
+  font-size: 3.5em;
+    text-align: center;
+    color: #999999;
+    font-family: Noto Sans JP;
+    margin: 0;}
+
+.Detail_img {
+  width: 80%;
+  margin: 100px 18%;
+}
+
+.Detail_img img{
+width: 80%;
+margin: 0 auto;
+text-align: center;
+}
+
+/* ●《”More about”説明セクション》● */
+.More_section{
+  position: absolute;
+  top: 7800px;
+  font-family: "Osaka レギュラー";
+  text-align: center;
+  right: 0px;
+  left: 0px;
+}
+.More_section h3{
+  font-size: 3.5em;
+    text-align: center;
+    color: #999999;
+    font-family: Noto Sans JP;
+    margin: 0;
+}
+.More_section h4{
+  font-size: 1.1em;
+  text-align: center;
+  color: rgb(155, 154, 154);
+  font-family: "Osaka レギュラー";
+  margin: 0;
+  margin-top: 10px;
+  letter-spacing: 0.3em;
+}
+
+
+
+/* Award セクション */
+
+#Award_section{
+  margin: 300px 10%;
+}
+
+
+
+
+.Awardsection_content{
+  text-align: center;
+  margin: 62px 3%;
+
+}
+
+.Awardsection_left{
+  width: 30%;
+  margin-left: 10%;
+  /* margin-right: 5%; */
+  color: #808080;
+  display: inline-block;
+}
+
+.Awardsection_content h6{
+  font-size: 0.7em;
+    text-align: left;
+    margin: 0;
+    margin-top: 35px;
+    letter-spacing: 0.1em;
+}
+.Awardsection_content h4{
+  font-size: 1.5em;
+  text-align: left;
+  margin: 8px 0;
+  line-height: 1.1em;
+  letter-spacing: 0.1em;
+}
+.Awardsection_content h5{
+  font-size: 0.9em;
+  text-align: left;
+  color: #80807D;
+  letter-spacing: 0.1em;
+  margin-top: 1px;
+}
+
+
+
+.Awardsection_right{
+  /* float: right; */
+  width: 40%;
+  margin-left: 5%;
+  /* margin-right: 5%; */
+  color: #808080;
+  display: inline-block;
+}
+.Awardsection_right h6{
+  margin-top: 10px;
+}
+
+.YellowRadius_Awardleft{
+  padding: 0;
+  margin: 0;
+  height: 94px;
+  width: 94px;
+  background: #ead558;
+  opacity: 0.5;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  z-index: 9998;
+  margin-top: -35%;
+  margin-right: 50%;
+  animation: scaleDrew 2.5s ease-in-out infinite;
+}
+
+.YellowRadius_Awardright{
+  padding: 0;
+    margin: 0;
+    height: 94px;
+    width: 94px;
+    background: #ead558;
+    opacity: 0.5;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    z-index: 9999;
+    margin-top: -27%;
+    margin-right: 50%;
+    animation: scaleDrew 2.5s ease-in-out infinite;
+}
+
+/* .Awardsection_right h6{
+  font-size: 0.5em;
+  text-align: left;
+  margin: 0;
+  margin-top: 35px;
+  
+}
+.Awardsection_right h4{
+  font-size: 1em;
+  text-align: left;
+  margin: 0;
+}
+.Awardsection_right h5{
+  font-size: 0.8em;
+  text-align: left;
+  margin: 0;
+} */
+
+/*  Designer セクション */
+/* #Designer_section h3{
+  font-size: 1.7em;
+  text-align: center;
+  color: rgb(155, 154, 154);
+  font-family: Noto Sans;
+} */
+
+.Designer_section_img{
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Designer_section_img img{
+  width: 100%;
+  margin-top: 10px;
+  max-width: 427px;
+}
+
+
+.Desiner_article{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* .Desiner_article H4{
+  font-size: 1.1em;
+  text-align: center;
+  color: #808080;
+  letter-spacing: 0.2em;
+ 
+} */
+
+
+.Desiner_article H5{
+  font-size: 0.8em;
+  text-align: center;
+  color: #808080;
+  letter-spacing: 0.1em;
+  margin-top: 0px;
+}
+
+  /* .More_section_right{
+    float: right;
+    width: 35%;
+    margin-right: 5%;
+    margin-top: 80px;
+  }
+  
+  .More_section_right img{
+    width: 100%;
+  } */ 
+
+
+
+
+/* .More_section{
+  position: absolute;
+  top: 7000px;
+}
+
+.More_section_left{
+  float: left;
+  width: 45%;
+  margin-left: 5%;
+}
+
+
+.Maker h3{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 1.5em;
+  color: grey;
+  letter-spacing: 0.1em;
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.Maker_p{
+  margin-top: 6px;
+}
+
+
+.Maker_p h5{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.8em;
+  color: grey;
+  letter-spacing: 0.1em;
+  position: relative;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.Date{
+  margin-top: 50px;
+}
+
+.Date h3{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 1.5em;
+  color: grey;
+  letter-spacing: 0.1em;
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.Date h5{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.8em;
+  color: grey;
+  letter-spacing: 0.1em;
+  position: relative;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.Award_1{
+  /* border-top:1px grey solid; */
+  /* border-bottom: 0.5px grey solid;
+}
+.Award h3{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 1.5em;
+  color: grey;
+  letter-spacing: 0.1em;
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  margin-left: 5%;
+  text-align: left;
+}
+
+
+.Award td{
+  margin: 10px;
+  left: 50px;
+  width: 50%;
+  padding-left: 3.5%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.Award h6,h4,h5{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  color: grey;
+  position: relative;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+.Award h6{
+  font-size: 0.5em;
+}
+.Award h4{
+  font-size: 1em;
+}
+
+.Award h5{
+  font-size: 0.8em;
+}
+
+.Award_1_right{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  color: grey;
+  width: 40%;
+  word-wrap: break-word;
+  table-layout: fixed;
+  white-space: pre-wrap;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.Award_2_right{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  color: grey;
+  width: 40%;
+  word-wrap: break-word;
+  table-layout: fixed;
+  white-space: pre-wrap;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.More_section_right{
+  float: right;
+  width: 35%;
+  margin-right: 5%;
+  margin-top: 80px;
+}
+
+.More_section_right img{
+  width: 100%;
+} */ 
+
+
+/* ●《フッター》● */
+
+
+.Footer_section{
+  position: absolute;
+  top: 9800px;
+}
+.Footer_section div{
+  clear: both;
+}
+
+.footer_Img{
+  width: 35%;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer_Img img{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer_logo{
+  width: 35%;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer_logo img{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer_capture{
+  font-size: 1.1em;
+  text-align: center;
+  color: #808080;
+  letter-spacing: 0.5em;
+  margin-top: 10px;
+}
+
+.footer_copyright{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.8em;
+  color: grey;
+  text-align: right;
+  float: right;
+  margin-right: 5%;
+} 
+
+
+
+/* .footer{
+  top: 7550px;
+  position: absolute;
+  margin-top:7550px;
+}
+
+.FooterNavi ul li :hover .Top_banner {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.FooterNavi {
+  float: left;
+  right: 0px;
+  margin-top: 7550px;
+  position: relative; 
+  line-height: 10px;
+
+}
+.FooterNavi ul {
+  margin: 0;
+}
+
+.FooterNavi ul li {
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.8em;
+  list-style: none;
+  width: 180px;
+
+  float: left;
+  color: grey;
+  font-weight: 900;
+}
+
+.FooterNavi ul li:hover {
+  color: #c22f30;
+  font-size: 1.3em;
+  transition: all 0.8s;
+}
+
+.footer_copyright{
+  font-family: "ヒラギノ丸ゴ Pro W4";
+  font-size: 0.6em;
+  color: grey;
+  text-align: right;
+  margin-top: 7550px;
+  position: relative; 
+} */
+
+/* 下方移動スクロール */
+.box {
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  background: #c22f30;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+}
+.border-radius_scroll ,.Introduction_border-radiusScroll,
+.instructions_border-radius_scroll,.Detailsection_box_border-radius_scroll{
+  padding: 0;
+  margin: 0;
+  /* border:1px #ccc solid; */
+  border-radius: 10px;
+  width: 18px;
+  height: 100px;
+  background-color: #eee;
+  /* top: 550px; */
+  left: 50%;
+  position: absolute;
+
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.3;
+  z-index: 9999;
+}
+.border-radius_scroll{
+  top: 550px; 
+
+}
+.Introduction_border-radiusScroll{
+  top: 700px;
+}
+
+.instructions_border-radius_scroll{
+  top: 2000px;
+
+}
+
+.Detailsection_box_border-radius_scroll{
+  top: 1050px;
+}
+
+
+
+
+
